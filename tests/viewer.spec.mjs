@@ -3,7 +3,7 @@ test('sensor exploration, simulation and model export', async ({page}) => {
  const errors=[];page.on('pageerror',e=>errors.push(e.message));
  await page.goto('http://127.0.0.1:5173/');
  await expect(page.locator('#fallback')).toBeHidden();
- await expect(page.locator('#detail-name')).toHaveText('마이크로렌즈');
+ await expect(page.locator('#detail-name')).toHaveText('Row driver · 행 선택');
  await page.locator('[data-mode="2"]').click();
  await expect(page.locator('#view-title')).toHaveText('픽셀 단면');
  await page.locator('[data-layer="2"]').click();
@@ -42,3 +42,4 @@ test('WebMCP validates input and shares visible UI state',async({page})=>{
  const error=await page.evaluate(async()=>{try{await window.sensorTool.execute({view:9,layer:0,separation:50});return false;}catch{return true;}});
  expect(error).toBe(true);await expect(page.locator('#view-title')).toHaveText('픽셀 단면');
 });
+
