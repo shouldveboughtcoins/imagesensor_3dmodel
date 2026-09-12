@@ -68,3 +68,11 @@ FSI·BSI·적층형 비교, 4T 픽셀의 전하 이동 상세, 롤링·글로벌
 회로 기능 참고:
 - [onsemi MT9P031, 기능 블록 및 읽기·제어 경로 (p.2–3)](https://www.onsemi.com/pdf/datasheet/mt9p031-d.pdf) — 이 제품의 BSI 또는 패키지 실물을 재현한 것은 아닙니다.
 - [Hamamatsu CMOS 센서 설명, CDS 및 열 ADC (p.24)](https://camera.hamamatsu.com/content/dam/hamamatsu-photonics/sites/static/sys/en/manual/C16240-20UP_IM_En.pdf)
+
+## GitHub Pages
+
+공개 주소: https://shouldveboughtcoins.github.io/imagesensor_3dmodel/
+
+저장소 Settings → Pages → Build and deployment → Source를 **GitHub Actions**로 지정합니다. `main`에 푸시하면 `.github/workflows/deploy-pages.yml`이 의존성 설치·빌드 후 `dist/`만 배포합니다. 원본 저장소 루트를 브랜치 방식으로 배포하면 TypeScript 소스가 실행되지 않아 빈 화면이 나타납니다.
+
+Vite의 `base: './'` 설정으로 저장소 하위 경로와 별도 도메인에서 같은 빌드 결과를 사용할 수 있습니다.
