@@ -1,4 +1,6 @@
-# Sensor Lab · 이미지 센서 3D 학습 뷰어
+# imagesensor_3dmodel
+
+Sensor Lab · 이미지 센서 3D 학습 뷰어
 
 일반화한 BSI CMOS 이미지 센서를 회전·확대하고, 구조와 동작을 배우는 한국어 웹 앱입니다.
 
